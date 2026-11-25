@@ -1,0 +1,60 @@
+(footprint "ANT_ShuntStub_0.5x2.5mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Printed shunt stub of the Abracon ACAG0301-24505500-T antenna pattern (datasheet Rev B p4): 0.5 mm wide, 2.0 mm long between feed strip and ground, plus 0.25 mm of overlap at each end. Net tie: pad 1 = antenna feed, pad 2 = ground.")
+	(tags "net tie antenna stub")
+	(property "Reference" "REF**"
+		(at 0 -1.8 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "bf742e07-26a4-4def-af22-ead1934109d1")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "ANT_ShuntStub_0.5x2.5mm"
+		(at 0 1.8 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f070dff2-538b-479b-a957-4fba4dca9b96")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+	(net_tie_pad_groups "1, 2")
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_poly
+		(pts
+			(xy -0.25 -0.75) (xy 0.25 -0.75) (xy 0.25 0.5) (xy -0.25 0.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "88094009-e8da-4410-99ff-629f35705b7b")
+	)
+	(pad "1" smd rect
+		(at 0 -1)
+		(size 0.5 0.5)
+		(layers "F.Cu")
+		(uuid "e0f7a351-f7cb-4a4b-a0d0-f01f75ea3c5d")
+	)
+	(pad "2" smd rect
+		(at 0 0.875)
+		(size 0.5 0.75)
+		(layers "F.Cu")
+		(uuid "6bf29f7f-fa44-4883-a063-bb37db8f2ab7")
+	)
+	(embedded_fonts no)
+)

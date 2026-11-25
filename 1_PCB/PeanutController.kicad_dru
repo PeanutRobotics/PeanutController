@@ -1,0 +1,36 @@
+(version 1)
+
+# JLCPCB 8-layer JLC08121H-3313 with plated through vias.
+# Vias marked filled and capped in the PCB require resin filling and copper capping.
+# Track, clearance, via and hole minima are set in Board Setup > Constraints (0.10 mm track and
+# clearance, 0.40/0.20 mm via, 0.20 mm hole-to-copper, 0.25 mm hole-to-hole).
+
+(rule "JLCPCB through vias only"
+  (constraint disallow micro_via blind_via buried_via)
+)
+
+# Nominal PCB propagation delays. Multi-drop connector paths are checked pin-to-pin separately.
+
+(rule "CSI D0 within pair"
+  (condition "A.NetName == 'CSI_D0P' || A.NetName == 'CSI_D0N'")
+  (constraint skew (max 0.8ps)))
+
+(rule "CSI D1 within pair"
+  (condition "A.NetName == 'CSI_D1P' || A.NetName == 'CSI_D1N'")
+  (constraint skew (max 0.8ps)))
+
+(rule "CSI CK within pair"
+  (condition "A.NetName == 'CSI_CKP' || A.NetName == 'CSI_CKN'")
+  (constraint skew (max 0.8ps)))
+
+(rule "PSRAM byte 0 data and strobe"
+  (condition "A.NetName == 'HEXASPI_DQS0' || A.NetName == 'HEXASPI_IO0' || A.NetName == 'HEXASPI_IO1' || A.NetName == 'HEXASPI_IO2' || A.NetName == 'HEXASPI_IO3' || A.NetName == 'HEXASPI_IO4' || A.NetName == 'HEXASPI_IO5' || A.NetName == 'HEXASPI_IO6' || A.NetName == 'HEXASPI_IO7'")
+  (constraint skew (max 30ps)))
+
+(rule "PSRAM byte 1 data and strobe"
+  (condition "A.NetName == 'HEXASPI_DQS1' || A.NetName == 'HEXASPI_IO8' || A.NetName == 'HEXASPI_IO9' || A.NetName == 'HEXASPI_IO10' || A.NetName == 'HEXASPI_IO11' || A.NetName == 'HEXASPI_IO12' || A.NetName == 'HEXASPI_IO13' || A.NetName == 'HEXASPI_IO14' || A.NetName == 'HEXASPI_IO15'")
+  (constraint skew (max 30ps)))
+
+(rule "Flash data and strobe"
+  (condition "A.NetName == 'OCTOSPI_DQS' || A.NetName == 'OCTOSPI_IO0' || A.NetName == 'OCTOSPI_IO1' || A.NetName == 'OCTOSPI_IO2' || A.NetName == 'OCTOSPI_IO3' || A.NetName == 'OCTOSPI_IO4' || A.NetName == 'OCTOSPI_IO5' || A.NetName == 'OCTOSPI_IO6' || A.NetName == 'OCTOSPI_IO7'")
+  (constraint skew (max 30ps)))

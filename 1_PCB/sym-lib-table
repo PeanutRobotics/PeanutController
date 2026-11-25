@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "PeanutMCU")(type "KiCad")(uri "${KIPRJMOD}/PeanutMCU.kicad_sym")(options "")(descr "Project symbols"))
+)

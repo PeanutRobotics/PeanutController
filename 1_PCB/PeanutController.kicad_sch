@@ -1,0 +1,297 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "5a6d366b-a43e-42e6-814a-8016f960eb33")
+	(paper "A4")
+	(title_block
+		(title "Peanut Drone Main PCB")
+		(date "2025-10-05")
+		(rev "v0.1")
+		(company "POSTECH, CoCEL")
+		(comment 1 "JihoRyoo")
+	)
+	(lib_symbols)
+	(sheet
+		(at 174.244 101.854)
+		(size 41.148 24.638)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "1682f753-5bc4-4560-ba1d-21c6f44f3076")
+		(property "Sheetname" "Memory"
+			(at 174.244 101.1424 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "_memory.kicad_sch"
+			(at 174.244 127.0766 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PeanutController"
+				(path "/5a6d366b-a43e-42e6-814a-8016f960eb33"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 218.44 132.08)
+		(size 40.386 24.13)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "245f0e27-3f6c-420c-9294-609b22f65a2a")
+		(property "Sheetname" "Interface"
+			(at 218.44 131.3684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "_interface.kicad_sch"
+			(at 218.44 156.7946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PeanutController"
+				(path "/5a6d366b-a43e-42e6-814a-8016f960eb33"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 173.99 132.08)
+		(size 41.402 24.13)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "43f8fc1b-b0b2-45d5-b608-9830da38178a")
+		(property "Sheetname" "Sensors"
+			(at 173.99 131.3684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "_sensors.kicad_sch"
+			(at 173.99 156.7946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PeanutController"
+				(path "/5a6d366b-a43e-42e6-814a-8016f960eb33"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 131.826 101.854)
+		(size 41.148 24.638)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "7ce3d573-1c6d-4713-ac92-5a097ce65477")
+		(property "Sheetname" "MCU-Main"
+			(at 131.826 101.1424 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "_stm32n6.kicad_sch"
+			(at 131.826 127.0766 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PeanutController"
+				(path "/5a6d366b-a43e-42e6-814a-8016f960eb33"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 132.334 132.08)
+		(size 40.64 24.384)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "9ec78147-259c-4cac-89f2-8debb8a5b412")
+		(property "Sheetname" "Power"
+			(at 132.334 131.3684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "_power.kicad_sch"
+			(at 132.334 157.0486 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PeanutController"
+				(path "/5a6d366b-a43e-42e6-814a-8016f960eb33"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 217.17 101.6)
+		(size 41.148 24.638)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "cc1f4800-b965-46b6-86a7-a0dc9c3e3866")
+		(property "Sheetname" "RF"
+			(at 217.17 100.8884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "_rf.kicad_sch"
+			(at 217.17 126.8226 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PeanutController"
+				(path "/5a6d366b-a43e-42e6-814a-8016f960eb33"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
